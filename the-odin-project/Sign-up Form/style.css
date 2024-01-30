@@ -1,10 +1,19 @@
 .background-image {
-    position: static;
     border: 1px solid black;
     background-image: url(images/sign-up\ form\ background\ image.jpg);
+    display: flex;
+    flex: none;
+    width: clamp(500px 34vw, 1200px);
+    flex-direction: column;
+    background-size: 100% 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
-    position: relative;
     border: 10px solid red;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
 }
