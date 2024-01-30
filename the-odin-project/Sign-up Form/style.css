@@ -1,0 +1,10 @@
+.background-image {
+    position: static;
+    border: 1px solid black;
+    background-image: url(images/sign-up\ form\ background\ image.jpg);
+}
+
+.container {
+    position: relative;
+    border: 10px solid red;
+}
