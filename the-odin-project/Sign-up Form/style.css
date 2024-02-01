@@ -1,19 +1,37 @@
+:root {
+    display: flex;
+    flex-direction: column;
+}
+
 .background-image {
     border: 1px solid black;
     background-image: url(images/sign-up\ form\ background\ image.jpg);
     display: flex;
-    flex: none;
+    flex: 1;
     width: clamp(500px 34vw, 1200px);
-    flex-direction: column;
+    height: clamp(200px, 34vw, 680px);
+    flex-direction: row;
     background-size: 100% 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+.background-image>p.brand-name {
+    color: white;
+    font-size: 50px;
 }
 
 .container {
     border: 10px solid red;
     display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: baseline;
+    height: clamp(200px, 34vw, 1000px);
+}
+
+.form-header>h1.form-header-text {
+    color: red;
+    font-size: 50px;
 }
