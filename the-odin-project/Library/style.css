@@ -36,5 +36,20 @@ footer:hover{
 }
 
 .abutton {
-    width: fit-content;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #999999;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.abutton:hover {
+    background-color: #2980b9;
 }
