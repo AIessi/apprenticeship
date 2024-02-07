@@ -15,7 +15,7 @@ body {
 .splashimg{
     position: relative;
     width: 40vw;
-    height: 100vh;
+    height: 110vh;
     --text-color: white;
     --link-color: white;
 }
@@ -31,7 +31,7 @@ body {
     align-items: center;
     position: fixed;
     color: var(--text-color);
-    top: 45%;
+    top: 35%;
     height: 200px;
     width: 40%;
     font-family: 'Couture Bold';
@@ -41,6 +41,7 @@ body {
 .title>p {
     font-size: 100px;
     font-weight: 600;
+    text-shadow: 2px 2px #00000070;
 }
 
 .credit {
@@ -74,7 +75,7 @@ p {
 }
 
 .blurb {
-    margin-top: 150px;
+    margin-top: 125px;
     padding-left: var(--padding);
     width: 47vw;
     margin-bottom: 50px;
@@ -86,10 +87,11 @@ input {
 }
 form {
     justify-self: center;
+    height: fit-content;
 }
 
 fieldset {
-    height: 30vh;
+    height: 40vh;
     border: 0px;
     padding-left: var(--padding);
     background-color: white;
@@ -130,7 +132,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid #ee2828;
 }
 
-input[type="submit"] {
+.create-account-button {
     margin-left: var(--padding);
     margin-top : calc(var(--padding)/2);
     height: 60px;
@@ -140,8 +142,13 @@ input[type="submit"] {
     font-size: 20px;
     font-weight: 600;
     border: 0px;
-    background-color: #5388b3;
-    box-shadow: 4px 4px 8px 2px #d3d2d2;;
+    background-color: olive;
+    /*box-shadow: 4px 4px 8px 2px #d3d2d2;; */
+}
+
+.create-account-button:hover {
+    background-color: skyblue;
+    transition: 0.3s;
 }
 
 .shadow{
@@ -156,4 +163,10 @@ input[type="submit"] {
 
 .login>p>a {
     text-decoration: none;
+    color: orange;
+}
+
+.login>p>a:hover {
+    color: skyblue;
+    transition: 0.2s;
 }
