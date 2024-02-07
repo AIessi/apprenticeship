@@ -2,49 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign-up Form</title>
+    <title>Sign-up Page</title>
 </head>
 <body>
-    <div class="background-image">
-        <p class="brand-name">Coco by Angela</p>
+    <div class="splashimg">
+        <img src="images/splash.jpg">
+        <div class="title">
+            <p>Join the City!</p>
+        </div>
+        <div class="credit">Art by <a href="https://www.instagram.com/seefromthesky" target="_new">Ishan</a></div>
     </div>
-    <div class="container">
-        <div class="form-header">
-            <h1 class="form-header-text">Get started</h1>
+    <div class="main">
+        <div class="blurb">
+            <p class="big">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p class="big">You <em>know</em> you want to.</p>
         </div>
         <form action="formoutputs/" method="post">
-            <div>
-                <label for="fname">First Name:</label><br>
-                <input type="text" name="fname" id="fname">
-            </div>
-            <div>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" name="lname" id="lname">
-            </div>
-            <div>
-                <label for="uemail">Email Address:</label>
-                <input type="email" id="uemail" name="uemail" placeholder="yourname@example.com">
-            </div>
-            <div>
-                <label for="phoneno">Phone number:</label><br>
-                <input type="number" id="phoneno" name="phoneno" >
-            </div>
-            <div>
-                <label for="upassword">Password:</label>
-                <input type="password" id="upassword" name="upassword" placeholder="Must be at least 8 characters">
-            </div>
-            <div>
-                <label for="cpassowrd">Confirm Password:</label>
-                <input type="password" id="cupassword" name="cupassword" placeholder="Must match your password">
-            </div>
-            <div>
-                <button type="submit">Create Account</button>
-            </div>
+            <fieldset>
+                <p class="big">Let's do this!</p>
+                <div class="r1">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                        <input required type="text" id="first_name" autocomplete="given-name" placeholder=" ">
+                    </div>
+                   <div>
+                        <label for="last_name">LAST NAME</label>
+                        <input required type="text" id="last_name" autocomplete="family-name" placeholder=" ">
+                   </div>
+                </div>
+                <div class="r2">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input required type="email" id="email" autocomplete="email" placeholder=" ">
+                    </div>
+                   <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input required 
+                            type="tel" 
+                            id="phone" 
+                            autocomplete="tel" 
+                            pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" 
+                            placeholder=" "
+                            oninvalid="this.setCustomValidity('Please use (123)-123-1234 or 123-123-1234')"
+                            oninput="this.setCustomValidity('')">
+                   </div>
+                </div>
+                <div class="r3">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input required type="password" id="password" autocomplete="new-password" placeholder=" ">
+                    </div>
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input required type="password" id="confirm_password" autocomplete="new-password" placeholder=" ">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="shadow"></div>
+            <input type="submit" id="submit" value="Create Account">
         </form>
-        <div>
-            <p>Already have an account? <button>Log in</button></p>
+        <div class="login">
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
 </body>
