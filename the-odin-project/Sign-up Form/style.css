@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Couture Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/couture-bld.woff);
+    }
+
 body {
     display: flex;
     margin: 0px;
@@ -24,10 +31,11 @@ body {
     align-items: center;
     position: fixed;
     color: var(--text-color);
-    top: 19.1%;
+    top: 45%;
     height: 200px;
     width: 40%;
-    background-color: #00000060;
+    font-family: 'Couture Bold';
+    text-align: center;
 }
 
 .title>p {
