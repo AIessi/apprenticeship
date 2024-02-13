@@ -1,14 +1,15 @@
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
       Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 160%;
   }
   
   a {
     text-decoration: none;
-    color: black;
+    color: inherit;
   }
   
-  a:hover {
+  a:hover {         
     color: orange;
     transition: 0.3s;
   }
@@ -26,7 +27,8 @@ html {
     grid-row: 1 / 3; /* your sidebar will extend from the first row coordinate, to the second where the main div starts, and to the final row at the bottom */
     padding: 5px;
     margin: 5px;
-    border: solid black;
+    background-color: #4d7c0f;
+    color: white;
   }
   
   .header {
@@ -54,7 +56,8 @@ html {
   .sidebar-title {
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
   }
   
   .projects {
@@ -81,4 +84,78 @@ html {
     color: white;
     border: none;
     transition: 0.3s;
+  }
+
+  .welcome-message {
+    float: left;
+    width: 70%;
+  }
+
+  .user-welcome {
+    display: flex;
+    flex-direction: row;
+  }
+  .avatar-icon {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .actionbtns {
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+  }
+
+  .btn {
+    all: unset;
+    padding: 10px;
+    background-color: olive;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .btn:hover {
+    background-color: olivedrab;
+    transition: 0.3s;
+  }
+
+  .search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #search {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #9b9b9b;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+  }
+  
+  .icon:hover {
+    fill: #333;
   }
